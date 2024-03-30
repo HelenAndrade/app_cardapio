@@ -1,0 +1,1602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8D8D8"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/card_header"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#BA2419"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        >
+
+        <TextView
+            android:id="@+id/text_client_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bem-vindo(a)!"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/text_client_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mesa"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_header"
+        android:layout_above="@id/card_padding"
+        android:layout_marginHorizontal="16dp"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/layout_menu_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/text_appetizer"
+                android:text="Entradas"
+                android:textSize="22sp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:textAlignment="textStart"
+                android:textColor="#3C1515"
+                android:textStyle="bold"
+                android:layout_marginVertical="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_appetizer_1"
+                android:layout_width="180dp"
+                android:layout_height="340dp"
+                android:layout_below="@id/text_appetizer"
+                card_view:cardCornerRadius="18dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/img_appetizer_1"
+                        android:layout_width="132dp"
+                        android:layout_height="132dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/sashi" />
+
+                    <TextView
+                        android:id="@+id/text_title_appetizer_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:textColor="#3C1515"
+                        android:layout_below="@id/img_appetizer_1"
+                        android:text="SASHIMI"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_description_appetizer_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_title_appetizer_1"
+                        android:layout_centerInParent="true"
+                        android:text="Sashimi de salmão defumado com molho de ostra e pimenta fresca (5 cortes)"
+                        android:textAlignment="textStart"
+                        android:textColor="#3C1515"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/text_add_appetizer_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="Adicionar"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"/>
+
+                    <TextView
+                        android:id="@+id/text_price_appetizer_1"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:layout_marginTop="44dp"
+                        android:textColor="#CD1919"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_appetizer_1"
+                        android:text="R$ 42"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_time_appetizer_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_appetizer_1"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="#D38F62"
+                        android:color="#7FDA58"
+                        android:gravity="center_vertical"
+                        android:text="10min"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_appetizer_1"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginHorizontal="20dp"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_appetizer_2"
+                android:layout_width="180dp"
+                android:layout_height="340dp"
+                android:layout_below="@id/text_appetizer"
+                card_view:cardCornerRadius="18dp"
+                android:layout_alignParentEnd="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/img_appetizer_2"
+                        android:layout_width="132dp"
+                        android:layout_height="132dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/ura" />
+
+                    <TextView
+                        android:id="@+id/text_title_appetizer_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:textColor="#3C1515"
+                        android:layout_below="@id/img_appetizer_2"
+                        android:text="URAMAKI"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_description_appetizer_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_title_appetizer_2"
+                        android:layout_centerInParent="true"
+                        android:text="Sushi tradicional enrolado com arroz por fora, gergelim e atum picante (8 unidades)"
+                        android:textAlignment="textStart"
+                        android:textColor="#3C1515"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/text_add_appetizer_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="Adicionar"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp" />
+
+                    <TextView
+                        android:id="@+id/text_price_appetizer_2"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:layout_marginTop="44dp"
+                        android:textColor="#CD1919"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_appetizer_2"
+                        android:text="R$ 38"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_time_appetizer_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_appetizer_2"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="#D38F62"
+                        android:color="#7FDA58"
+                        android:gravity="center_vertical"
+                        android:text="15min"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_appetizer_2"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginHorizontal="20dp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_appetizer_3"
+                android:layout_width="180dp"
+                android:layout_height="340dp"
+                android:layout_below="@id/card_appetizer_1"
+                android:layout_marginTop="16dp"
+                card_view:cardCornerRadius="18dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/img_appetizer_3"
+                        android:layout_width="132dp"
+                        android:layout_height="132dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/nig" />
+
+                    <TextView
+                        android:id="@+id/text_title_appetizer_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:textColor="#3C1515"
+                        android:text="NIGIRI"
+                        android:textSize="16sp"
+                        android:layout_below="@id/img_appetizer_3"
+                        />
+
+                    <TextView
+                        android:id="@+id/text_description_appetizer_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_title_appetizer_3"
+                        android:layout_centerInParent="true"
+                        android:text="Dupla de polvo com molho de ostra sobre base de shari (arroz japonês temperado - 2 Unidades)"
+                        android:textAlignment="textStart"
+                        android:textColor="#3C1515"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/text_add_appetizer_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="Adicionar"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp" />
+
+                    <TextView
+                        android:id="@+id/text_price_appetizer_3"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:layout_marginTop="44dp"
+                        android:textColor="#CD1919"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:text="R$ 35"
+                        android:textSize="16sp"
+                        android:layout_above="@id/text_add_appetizer_3"
+                        />
+
+                    <TextView
+                        android:id="@+id/text_time_appetizer_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_appetizer_3"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="#D38F62"
+                        android:color="#7FDA58"
+                        android:gravity="center_vertical"
+                        android:text="10min"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_appetizer_3"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginHorizontal="20dp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_appetizer_4"
+                android:layout_width="180dp"
+                android:layout_height="340dp"
+                android:layout_below="@id/card_appetizer_2"
+                android:layout_marginTop="16dp"
+                card_view:cardCornerRadius="18dp"
+                android:layout_alignParentEnd="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/img_appetizer_4"
+                        android:layout_width="132dp"
+                        android:layout_height="132dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/yaki" />
+
+                    <TextView
+                        android:id="@+id/text_title_appetizer_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:textColor="#3C1515"
+                        android:layout_below="@id/img_appetizer_4"
+                        android:text="YAKIMONO"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_description_appetizer_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_title_appetizer_4"
+                        android:layout_centerInParent="true"
+                        android:text="Espeto de camarão grelhado sobre pedra vulcânica (3 camarões grandes)"
+                        android:textAlignment="textStart"
+                        android:textColor="#3C1515"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/text_add_appetizer_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="Adicionar"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp" />
+
+                    <TextView
+                        android:id="@+id/text_price_appetizer_4"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:layout_marginTop="44dp"
+                        android:textColor="#CD1919"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_appetizer_4"
+                        android:text="R$ 39"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_time_appetizer_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_appetizer_4"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="#D38F62"
+                        android:color="#7FDA58"
+                        android:gravity="center_vertical"
+                        android:text="15min"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_appetizer_4"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginHorizontal="20dp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/text_maincourse"
+                android:text="Pratos Principais"
+                android:layout_below="@id/card_appetizer_3"
+                android:textSize="22sp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:textAlignment="textStart"
+                android:textColor="#3C1515"
+                android:textStyle="bold"
+                android:layout_marginVertical="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_maincourse_1"
+                android:layout_width="180dp"
+                android:layout_height="340dp"
+                android:layout_below="@id/text_maincourse"
+                card_view:cardCornerRadius="18dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/img_maincourse_1"
+                        android:layout_width="132dp"
+                        android:layout_height="132dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/suki" />
+
+                    <TextView
+                        android:id="@+id/text_title_maincourse_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:textColor="#3C1515"
+                        android:layout_below="@id/img_maincourse_1"
+                        android:text="SUKIYAKI"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_description_maincourse_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_title_maincourse_1"
+                        android:layout_centerInParent="true"
+                        android:text="Cozido com filé mignon, shitake, shimeji, moyashi, tofu, cebolinha e repolho em caldo de legumes, shoyu e ovo."
+                        android:textAlignment="textStart"
+                        android:textColor="#3C1515"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/text_add_maincourse_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="Adicionar"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"/>
+
+                    <TextView
+                        android:id="@+id/text_price_maincourse_1"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:layout_marginTop="44dp"
+                        android:textColor="#CD1919"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_maincourse_1"
+                        android:text="R$ 65"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_time_maincourse_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_maincourse_1"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="#D38F62"
+                        android:text="25min"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_maincourse_1"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginHorizontal="20dp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Main Course 2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_maincourse_2"
+                android:layout_width="180dp"
+                android:layout_height="340dp"
+                android:layout_below="@id/text_maincourse"
+                card_view:cardCornerRadius="18dp"
+                android:layout_alignParentEnd="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/img_maincourse_2"
+                        android:layout_width="132dp"
+                        android:layout_height="132dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/ebi" />
+
+                    <TextView
+                        android:id="@+id/text_title_maincourse_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:textColor="#3C1515"
+                        android:layout_below="@id/img_maincourse_2"
+                        android:text="EBI WONG"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_description_maincourse_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_title_maincourse_2"
+                        android:layout_centerInParent="true"
+                        android:text="Camarões médios grelhados, acompanhados de yakimeshi de shimeji com camarão. (4 unidades)"
+                        android:textAlignment="textStart"
+                        android:textColor="#3C1515"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/text_add_maincourse_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="Adicionar"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"/>
+
+                    <TextView
+                        android:id="@+id/text_price_maincourse_2"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:layout_marginTop="44dp"
+                        android:textColor="#CD1919"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_maincourse_2"
+                        android:text="R$ 74"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_time_maincourse_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_maincourse_2"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="#D38F62"
+                        android:text="15min"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_maincourse_2"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginHorizontal="20dp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Main Course 3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_maincourse_3"
+                android:layout_width="180dp"
+                android:layout_height="340dp"
+                android:layout_below="@id/card_maincourse_1"
+                android:layout_marginTop="16dp"
+                card_view:cardCornerRadius="18dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/img_maincourse_3"
+                        android:layout_width="132dp"
+                        android:layout_height="132dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/tak" />
+
+                    <TextView
+                        android:id="@+id/text_title_maincourse_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:textColor="#3C1515"
+                        android:layout_below="@id/img_maincourse_3"
+                        android:text="TAKO"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_description_maincourse_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_title_maincourse_3"
+                        android:layout_centerInParent="true"
+                        android:text="Tentáculo de polvo e batata doce grelhados com molho curry."
+                        android:textAlignment="textStart"
+                        android:textColor="#3C1515"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/text_add_maincourse_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="Adicionar"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp" />
+
+                    <TextView
+                        android:id="@+id/text_price_maincourse_3"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:layout_marginTop="44dp"
+                        android:textColor="#CD1919"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_maincourse_3"
+                        android:text="R$ 78"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_time_maincourse_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_maincourse_3"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="#D38F62"
+                        android:text="20min"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_maincourse_3"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginHorizontal="20dp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Main Course 4 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_maincourse_4"
+                android:layout_width="180dp"
+                android:layout_height="340dp"
+                android:layout_below="@id/card_maincourse_2"
+                android:layout_marginTop="16dp"
+                card_view:cardCornerRadius="18dp"
+                android:layout_alignParentEnd="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/img_maincourse_4"
+                        android:layout_width="132dp"
+                        android:layout_height="132dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/teppa" />
+
+                    <TextView
+                        android:id="@+id/text_title_maincourse_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:textColor="#3C1515"
+                        android:layout_below="@id/img_maincourse_4"
+                        android:text="TEPPAN"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_description_maincourse_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_title_maincourse_4"
+                        android:layout_centerInParent="true"
+                        android:text="Salmão grelhado na chapa (4 unidades) com leve toque de alho. Acompanha legumes."
+                        android:textAlignment="textStart"
+                        android:textColor="#3C1515"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/text_add_maincourse_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="Adicionar"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp" />
+
+                    <TextView
+                        android:id="@+id/text_price_maincourse_4"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:layout_marginTop="44dp"
+                        android:textColor="#CD1919"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_maincourse_4"
+                        android:text="R$ 67"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_time_maincourse_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_maincourse_4"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="#D38F62"
+                        android:text="20min"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_maincourse_4"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginHorizontal="20dp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/text_dessert"
+                android:text="Sobremesas"
+                android:layout_below="@id/card_maincourse_3"
+                android:textSize="22sp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:textAlignment="textStart"
+                android:textColor="#3C1515"
+                android:textStyle="bold"
+                android:layout_marginVertical="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_dessert_1"
+                android:layout_width="180dp"
+                android:layout_height="340dp"
+                android:layout_below="@id/text_dessert"
+                card_view:cardCornerRadius="18dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/img_dessert_1"
+                        android:layout_width="132dp"
+                        android:layout_height="132dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/sweet" />
+
+                    <TextView
+                        android:id="@+id/text_title_dessert_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:textColor="#3C1515"
+                        android:layout_below="@id/img_dessert_1"
+                        android:text="SWEET SUSHI"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_description_dessert_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_title_dessert_1"
+                        android:layout_centerInParent="true"
+                        android:text="Casquinha crocante com morango, sorvete, raspas de limão siciliano e aceto balsâmico (6 unidades)"
+                        android:textAlignment="textStart"
+                        android:textColor="#3C1515"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/text_add_dessert_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="Adicionar"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp" />
+
+                    <TextView
+                        android:id="@+id/text_price_dessert_1"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:layout_marginTop="44dp"
+                        android:textColor="#CD1919"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_dessert_1"
+                        android:text="R$ 31"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_time_dessert_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_dessert_1"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="#D38F62"
+                        android:text="10min"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_dessert_1"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginHorizontal="20dp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Dessert 2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_dessert_2"
+                android:layout_width="180dp"
+                android:layout_height="340dp"
+                android:layout_below="@id/text_dessert"
+                android:layout_alignParentEnd="true"
+                card_view:cardCornerRadius="18dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/img_dessert_2"
+                        android:layout_width="132dp"
+                        android:layout_height="132dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/chocolate" />
+
+                    <TextView
+                        android:id="@+id/text_title_dessert_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:textColor="#3C1515"
+                        android:layout_below="@id/img_dessert_2"
+                        android:text="CHOCOLATE SASHIMI"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_description_dessert_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_title_dessert_2"
+                        android:layout_centerInParent="true"
+                        android:text="Sashimi de chocolate meio amargo com coco fresco e frutas vermelhas. Selado com crocante de amêndoa."
+                        android:textAlignment="textStart"
+                        android:textColor="#3C1515"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/text_add_dessert_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="Adicionar"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp" />
+
+                    <TextView
+                        android:id="@+id/text_price_dessert_2"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:layout_marginTop="44dp"
+                        android:textColor="#CD1919"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_dessert_2"
+                        android:text="R$ 32"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_time_dessert_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_dessert_2"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="#D38F62"
+                        android:text="10min"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_dessert_2"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginHorizontal="20dp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Dessert 3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_dessert_3"
+                android:layout_width="180dp"
+                android:layout_height="340dp"
+                android:layout_below="@id/card_dessert_2"
+                android:layout_marginTop="16dp"
+                card_view:cardCornerRadius="18dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/img_dessert_3"
+                        android:layout_width="132dp"
+                        android:layout_height="132dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/milfilo" />
+
+                    <TextView
+                        android:id="@+id/text_title_dessert_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:textColor="#3C1515"
+                        android:layout_below="@id/img_dessert_3"
+                        android:text="MIL FILO"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_description_dessert_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textColor="#3C1515"
+                        android:layout_below="@+id/text_title_dessert_3"
+                        android:layout_centerInParent="true"
+                        android:text="Morango e manga com chantilly de mirtillo sobre massa filo crocante."
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/text_add_dessert_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="Adicionar"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp" />
+
+                    <TextView
+                        android:id="@+id/text_price_dessert_3"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:layout_marginTop="44dp"
+                        android:textColor="#CD1919"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_dessert_3"
+                        android:text="R$ 28"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_time_dessert_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_dessert_3"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="#D38F62"
+                        android:text="15min"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_dessert_3"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginHorizontal="20dp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Dessert 4 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_dessert_4"
+                android:layout_width="180dp"
+                android:layout_height="340dp"
+                android:layout_below="@id/card_dessert_2"
+                android:layout_marginTop="16dp"
+                card_view:cardCornerRadius="18dp"
+                android:layout_alignParentEnd="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/img_dessert_4"
+                        android:layout_width="132dp"
+                        android:layout_height="132dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/hotchoco" />
+
+                    <TextView
+                        android:id="@+id/text_title_dessert_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:textColor="#3C1515"
+                        android:layout_below="@id/img_dessert_4"
+                        android:text="CHOCO BANANA"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_description_dessert_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textColor="#3C1515"
+                        android:layout_below="@+id/text_title_dessert_4"
+                        android:layout_centerInParent="true"
+                        android:text="Banana ao forno com chocolate com calda de laranja, acompanhada de sorvete de creme e tela de caramelo."
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/text_add_dessert_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="Adicionar"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp" />
+
+                    <TextView
+                        android:id="@+id/text_price_dessert_4"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:layout_marginTop="44dp"
+                        android:textColor="#CD1919"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_dessert_4"
+                        android:text="R$ 30"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_time_dessert_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_dessert_4"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="#D38F62"
+                        android:text="15min"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_dessert_4"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginHorizontal="20dp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/text_beverage"
+                android:text="Bebidas"
+                android:layout_below="@id/card_dessert_3"
+                android:textSize="22sp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:textAlignment="textStart"
+                android:textColor="#3C1515"
+                android:textStyle="bold"
+                android:layout_marginVertical="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_beverage_1"
+                android:layout_width="180dp"
+                android:layout_height="340dp"
+                card_view:cardCornerRadius="18dp"
+                android:layout_below="@id/text_beverage">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/img_beverage_1"
+                        android:layout_width="132dp"
+                        android:layout_height="132dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/moscow" />
+
+                    <TextView
+                        android:id="@+id/text_title_beverage_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:textColor="#3C1515"
+                        android:layout_below="@id/img_beverage_1"
+                        android:text="MOSCOW GIN"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_description_beverage_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_title_beverage_1"
+                        android:layout_centerInParent="true"
+                        android:text="Suco de limão, angostura, espuma de gengibre e gin bombay."
+                        android:textAlignment="textStart"
+                        android:textColor="#3C1515"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/text_add_beverage_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="Adicionar"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp" />
+
+                    <TextView
+                        android:id="@+id/text_price_beverage_1"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:layout_marginTop="44dp"
+                        android:textColor="#CD1919"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_beverage_1"
+                        android:text="R$ 28"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_time_beverage_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_beverage_1"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="#D38F62"
+                        android:text="5min"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_beverage_1"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginHorizontal="20dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_beverage_2"
+                android:layout_width="180dp"
+                android:layout_height="340dp"
+                android:layout_below="@id/text_beverage"
+                card_view:cardCornerRadius="18dp"
+                android:layout_alignParentEnd="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/img_beverage_2"
+                        android:layout_width="132dp"
+                        android:layout_height="132dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/suco" />
+
+                    <TextView
+                        android:id="@+id/text_title_beverage_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:textColor="#3C1515"
+                        android:layout_below="@id/img_beverage_2"
+                        android:text="SUCO DE ABACAXI COM HORTELÃS"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_description_beverage_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textColor="#3C1515"
+                        android:layout_below="@+id/text_title_beverage_2"
+                        android:layout_centerInParent="true"
+                        android:text="Suco natural de abacaxi com hortelãs (400ml)."
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/text_add_beverage_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="Adicionar"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp" />
+
+                    <TextView
+                        android:id="@+id/text_price_beverage_2"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:layout_marginTop="44dp"
+                        android:textColor="#CD1919"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_beverage_2"
+                        android:text="R$ 12"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_time_beverage_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_beverage_2"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="#D38F62"
+                        android:text="5min"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_beverage_2"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginHorizontal="20dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_beverage_3"
+                android:layout_width="180dp"
+                android:layout_height="340dp"
+                android:layout_below="@id/card_beverage_2"
+                android:layout_marginTop="16dp"
+                card_view:cardCornerRadius="18dp"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/img_beverage_3"
+                        android:layout_width="132dp"
+                        android:layout_height="132dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/samurai" />
+
+                    <TextView
+                        android:id="@+id/text_title_beverage_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:textColor="#3C1515"
+                        android:layout_below="@id/img_beverage_3"
+                        android:text="SAMURAI MARTINI"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_description_beverage_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textColor="#3C1515"
+                        android:layout_below="@+id/text_title_beverage_3"
+                        android:layout_centerInParent="true"
+                        android:text="Tanqueray Dry, saquê, licor e extrato de lichia."
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/text_add_beverage_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="Adicionar"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp" />
+
+                    <TextView
+                        android:id="@+id/text_price_beverage_3"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:layout_marginTop="44dp"
+                        android:textColor="#CD1919"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_beverage_3"
+                        android:text="R$ 20"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_time_beverage_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_beverage_3"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="#D38F62"
+                        android:text="5min"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_beverage_3"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginHorizontal="20dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_beverage_4"
+                android:layout_width="180dp"
+                android:layout_height="340dp"
+                android:layout_below="@id/card_beverage_2"
+                android:layout_marginTop="16dp"
+                card_view:cardCornerRadius="18dp"
+                android:layout_alignParentEnd="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/img_beverage_4"
+                        android:layout_width="132dp"
+                        android:layout_height="132dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/cha" />
+
+                    <TextView
+                        android:id="@+id/text_title_beverage_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:textColor="#3C1515"
+                        android:layout_below="@id/img_beverage_4"
+                        android:text="CHÁ GELADO DE HIBISCO"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_description_beverage_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_title_beverage_4"
+                        android:layout_centerInParent="true"
+                        android:text="Chá gelado natural de hibisco com limão tahiti e levemente adoçado."
+                        android:textAlignment="textStart"
+                        android:textColor="#3C1515"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/text_add_beverage_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="Adicionar"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp" />
+
+                    <TextView
+                        android:id="@+id/text_price_beverage_4"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:layout_marginTop="44dp"
+                        android:textColor="#CD1919"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_beverage_4"
+                        android:text="R$ 17"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_time_beverage_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_above="@id/text_add_beverage_4"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="#D38F62"
+                        android:color="#7FDA58"
+                        android:gravity="center_vertical"
+                        android:text="5min"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_beverage_4"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginHorizontal="20dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/card_padding"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:background="#BA2419"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/editTextPreferences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:hint="Digite suas preferências"
+            android:textColorHint="#E67575"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Total: R$ 0.0"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+               />
+
+            <Button
+                android:id="@+id/confirm_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Realizar pedido"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:backgroundTint="#FFEDED"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
