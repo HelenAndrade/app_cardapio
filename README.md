@@ -2,7 +2,6 @@
   <br>
   <img src="https://i.imgur.com/dh1tgPW.jpg" >
   <br>
-  <br>
 </h1>
 
 <h1 align="center">Cardápio Digital</h1>
