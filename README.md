@@ -44,6 +44,7 @@ git clone https://github.com/HelenAndrade/app_cardapio.git
 ## :soon: Contribuindo
 
 Contribuições são bem-vindas! Se você encontrar problemas, bugs ou tiver sugestões de melhorias, sinta-se à vontade para entrar em contato.
+helenaraujoandrade@hotmail.com
 
 ## :handshake: Autores
 
